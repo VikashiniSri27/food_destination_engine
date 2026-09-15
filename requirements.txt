@@ -1,0 +1,15 @@
+# Core web framework
+flask>=3.0.3
+flask-cors>=4.0.1
+werkzeug>=3.0.3
+
+# Image handling
+Pillow>=10.4.0
+
+# Scientific computing
+numpy>=1.26.4
+scikit-learn>=1.5.0
+
+# Optional: deep learning (comment out if not needed)
+# torch==2.3.0
+# torchvision==0.18.0
