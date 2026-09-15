@@ -1,0 +1,54 @@
+.card {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.label {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.badge {
+  align-self: flex-start;
+  padding: .3rem .75rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.main { text-align: center; }
+.bigNum { font-size: 1.9rem; font-weight: 700; color: var(--gray-900); line-height: 1; }
+.bigSub { font-size: .75rem; color: var(--gray-400); margin-top: .2rem; }
+
+.gaugeWrap { display: flex; justify-content: center; }
+.gauge {
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.gaugeInner {
+  width: 66px; height: 66px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.gaugePct { font-size: 1rem; font-weight: 700; color: var(--gray-900); line-height: 1; }
+.gaugeText { font-size: .65rem; color: var(--gray-400); }
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  border-top: 1px solid var(--gray-100);
+  padding-top: .75rem;
+}

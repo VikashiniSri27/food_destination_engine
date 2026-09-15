@@ -1,0 +1,52 @@
+.card {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.label {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.badge {
+  align-self: flex-start;
+  padding: .3rem .75rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.scoreRow { display: flex; align-items: baseline; gap: .4rem; }
+.scoreNum { font-size: 2rem; font-weight: 700; color: var(--gray-900); line-height: 1; }
+.scoreText { font-size: .8rem; color: var(--gray-400); }
+
+.barTrack {
+  height: 6px;
+  background: var(--gray-100);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.barFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width .6s ease;
+}
+
+.probs { display: flex; flex-direction: column; gap: .4rem; }
+.probsTitle { font-size: .72rem; color: var(--gray-400); font-weight: 500; }
+.probRow { display: flex; align-items: center; gap: .5rem; }
+.probLabel { font-size: .75rem; color: var(--gray-600); width: 110px; flex-shrink: 0; }
+.probTrack { flex: 1; height: 5px; background: var(--gray-100); border-radius: 3px; overflow: hidden; }
+.probFill { height: 100%; border-radius: 3px; transition: width .6s ease; }
+.probPct { font-size: .73rem; color: var(--gray-500); width: 28px; text-align: right; flex-shrink: 0; }
+
+.mode { font-size: .72rem; color: var(--gray-400); border-top: 1px solid var(--gray-100); padding-top: .5rem; }

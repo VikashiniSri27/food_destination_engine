@@ -1,0 +1,81 @@
+.card {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.label {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.sub {
+  font-size: .85rem;
+  color: var(--gray-600);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.item {
+  display: flex;
+  gap: .65rem;
+  align-items: flex-start;
+}
+
+.num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e0e7ff;
+  color: #4338ca;
+  font-size: .72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.text {
+  font-size: .87rem;
+  color: var(--gray-700);
+  line-height: 1.5;
+}
+
+.footer {
+  border-top: 1px solid var(--gray-100);
+  padding-top: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.modelTag {
+  font-size: .72rem;
+  font-weight: 600;
+  color: #6366f1;
+  background: #eef2ff;
+  padding: .2rem .55rem;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+.disclaimer {
+  font-size: .72rem;
+  color: var(--gray-400);
+  line-height: 1.45;
+}

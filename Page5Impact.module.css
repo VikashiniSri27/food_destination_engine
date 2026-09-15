@@ -1,0 +1,100 @@
+.page { display: flex; flex-direction: column; gap: 1.5rem; animation: fadeIn .4s ease both; }
+
+.hero { text-align: center; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: .4rem;
+  background: var(--green-bg); color: var(--green);
+  font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  padding: .3rem .8rem; border-radius: 999px; margin-bottom: .85rem;
+}
+.title { font-size: 1.9rem; font-weight: 800; color: var(--gray-900); margin-bottom: .3rem; letter-spacing: -.02em; }
+.desc  { font-size: .92rem; color: var(--gray-500); }
+
+.banner {
+  display: flex; align-items: center; gap: 1rem;
+  border: 2px solid; border-radius: var(--radius-lg); padding: 1.1rem 1.4rem;
+  flex-wrap: wrap; animation: scaleIn .35s ease both;
+}
+.bannerLabel { font-size: .68rem; font-weight: 700; color: var(--gray-500); text-transform: uppercase; letter-spacing: .06em; }
+.bannerName  { font-size: 1.2rem; font-weight: 800; letter-spacing: -.01em; }
+.qtyTag {
+  margin-left: auto; padding: .35rem .85rem;
+  background: #fff; border: 1.5px solid var(--gray-200);
+  border-radius: 999px; font-size: .82rem; font-weight: 700; color: var(--gray-700);
+}
+
+/* stats grid */
+.statsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; }
+
+.statCard {
+  border: 1.5px solid; border-radius: var(--radius-lg);
+  padding: 1.4rem 1.2rem;
+  display: flex; flex-direction: column; align-items: center; gap: .55rem; text-align: center;
+  transition: var(--transition);
+  animation: scaleIn .4s ease both;
+}
+.statCard:nth-child(1) { animation-delay: .05s; }
+.statCard:nth-child(2) { animation-delay: .10s; }
+.statCard:nth-child(3) { animation-delay: .15s; }
+
+.statCard:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.statIcon  { font-size: 2.2rem; filter: drop-shadow(0 3px 6px rgba(0,0,0,.1)); }
+.statValue { font-size: 1.7rem; font-weight: 900; line-height: 1; letter-spacing: -.02em; }
+.statUnit  { font-size: .78rem; font-weight: 600; color: var(--gray-500); }
+.statLabel { font-size: .78rem; color: var(--gray-600); line-height: 1.4; }
+
+/* comparison card */
+.card {
+  background: #fff; border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg); padding: 1.35rem; box-shadow: var(--shadow);
+}
+.sectionTitle { font-size: .95rem; font-weight: 700; color: var(--gray-800); margin-bottom: 1rem; }
+
+.compGrid { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+@media (max-width: 480px) { .compGrid { grid-template-columns: 1fr; } }
+.compItem {
+  display: flex; align-items: center; gap: .8rem;
+  background: var(--gray-50); border: 1px solid var(--gray-100);
+  border-radius: var(--radius); padding: .8rem 1rem;
+  transition: var(--transition);
+}
+.compItem:hover { background: var(--primary-light); border-color: var(--primary-glow); }
+.compIcon  { font-size: 1.6rem; flex-shrink: 0; }
+.compLabel { font-size: .73rem; color: var(--gray-500); font-weight: 500; margin-bottom: .1rem; }
+.compValue { font-size: .95rem; font-weight: 800; }
+
+/* SDG */
+.sdgCard {
+  display: flex; align-items: flex-start; gap: 1rem;
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border: 1.5px solid #86efac; border-radius: var(--radius-lg);
+  padding: 1.2rem 1.4rem;
+}
+.sdgBadge {
+  background: linear-gradient(135deg, var(--green), #15803d);
+  color: #fff; font-weight: 800; font-size: .88rem;
+  padding: .55rem .95rem; border-radius: 8px;
+  flex-shrink: 0; white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(22,163,74,.3);
+}
+.sdgTitle { font-size: .9rem; font-weight: 700; color: #166534; margin-bottom: .3rem; }
+.sdgText  { font-size: .8rem; color: #166534; line-height: 1.55; }
+
+/* actions */
+.actions { display: flex; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
+.backBtn {
+  padding: .75rem 1.4rem; background: #fff; border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius); font-size: .88rem; font-weight: 600; color: var(--gray-700);
+  cursor: pointer; font-family: inherit; transition: var(--transition);
+}
+.backBtn:hover { background: var(--gray-50); border-color: var(--gray-300); }
+.resetBtn {
+  padding: .75rem 1.6rem;
+  background: linear-gradient(135deg, var(--green), #15803d);
+  color: #fff; border: none; border-radius: var(--radius);
+  font-size: .92rem; font-weight: 700; cursor: pointer;
+  font-family: inherit; transition: var(--transition);
+  box-shadow: 0 4px 14px rgba(22,163,74,.3);
+}
+.resetBtn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(22,163,74,.4); }

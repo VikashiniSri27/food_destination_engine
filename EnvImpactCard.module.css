@@ -1,0 +1,75 @@
+.card {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+}
+
+.label {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.intro {
+  font-size: .88rem;
+  color: var(--gray-600);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .65rem .85rem;
+  background: var(--gray-50);
+  border-radius: 8px;
+  border: 1px solid var(--gray-100);
+}
+
+.statIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.statValue {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.statUnit {
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+
+.statLabel {
+  font-size: .75rem;
+  color: var(--gray-500);
+  margin-top: .1rem;
+}
+
+.sdgTag {
+  display: flex;
+  align-items: flex-start;
+  gap: .4rem;
+  font-size: .75rem;
+  color: var(--gray-500);
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  padding: .55rem .75rem;
+  line-height: 1.4;
+}
